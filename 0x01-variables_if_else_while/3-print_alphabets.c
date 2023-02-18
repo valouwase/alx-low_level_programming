@@ -7,11 +7,9 @@
  */
 int main(void)
 {
-	char lower_letter;
+	char lower_letter , upper_letter;
 
 	lower_letter = 'a';
-
-	char upper_letter;
 
 	upper_letter = 'A';
 
