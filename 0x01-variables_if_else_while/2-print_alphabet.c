@@ -8,9 +8,10 @@
 int main(void)
 {
 	char lower_letter;
+
 	lower_letter = 'a';
 
-	for ( ;lower_letter <= 'z'; lower_letter++)
+	for ( ; lower_letter <= 'z'; lower_letter++)
 		putchar(lower_letter);
 
 	putchar('\n');
