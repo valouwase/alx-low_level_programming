@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char lower_letter , upper_letter;
+	char lower_letter, upper_letter;
 
 	lower_letter = 'a';
 
