@@ -3,7 +3,7 @@
  * main - Prints all possible combinations of single-digit numbers.
  *
  * Return: Always 0.
- */
+*/
 int main(void)
 {
 	int num;
@@ -17,6 +17,5 @@ int main(void)
 		putchar(' ');
 	}
 	putchar('\n');
-
 	return (0);
 }
