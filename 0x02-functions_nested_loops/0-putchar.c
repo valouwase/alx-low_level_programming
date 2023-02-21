@@ -1,4 +1,4 @@
-#include <main.h>
+#include <studio.h>
 /**
  * main - Prints "putchar" followed by a new line.
  *
