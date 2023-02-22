@@ -12,6 +12,6 @@ void print_alphabet(void)
 	{
 		_putchar("%c", lowerCase);
 	}
-	putchar('\n');
+	_putchar('\n');
 
 }

@@ -1,7 +1,2 @@
-#include <stdio.h>
-/** main -  prints the alphabet, in lowercase, followed by a new line.
- *
- * return: Always 0
- *
-*/
+int _putchar(char lowerCase);
 void print_alphabet(void);
