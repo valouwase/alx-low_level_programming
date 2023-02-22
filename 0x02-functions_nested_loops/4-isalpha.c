@@ -2,7 +2,7 @@
 /**
  * _isalpha - check lowercase,uppercase and letter.
  * @c: int parameter.
- *
+ * Return: 1 or 0 otherwise.
  */
 int _isalpha(int c)
 {
