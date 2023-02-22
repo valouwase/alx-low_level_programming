@@ -1,4 +1,4 @@
-#include "main.h"
+#include "maiin.h"
 #include <stdio.h>
 /** main -  prints the alphabet, in lowercase, followed by a new line.
  *
@@ -6,7 +6,7 @@
  *
  */
 
-void palphabet(void)
+void print_alphabet(void)
 {
         char lowerCase;
 
@@ -19,9 +19,7 @@ void palphabet(void)
 }
 int main(void)
 {
-        palphabet();
+        print_alphabet();
 
         return 0;
 }
-
-
