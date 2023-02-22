@@ -4,22 +4,25 @@
  * return: Always 0
  *
  */
-#include "main.h"
+// #include "main.h"
+void print_alphabet(void);
 
-void print_alphabet()
-{
-	char lowerCase;
-
-	for(lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
-	{
-		putchar(lowerCase);
-	}
-	putchar('\n');
-
-}
 int main(void)
 {
-	print_alphabet();
+        print_alphabet();
 
-	return 0;
+        return 0;
+}
+
+
+void print_alphabet(void)
+{
+        char lowerCase;
+
+        for(lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+        {
+                putchar(lowerCase);
+        }
+        putchar('\n');
+
 }
