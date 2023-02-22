@@ -2,12 +2,11 @@
 
 void print_alphabet(void)
 {
-        char lowerCase;
+	char lowerCase;
 
         for(lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
-        {
-                printf("%c",lowerCase);
-        }
+	{
+		printf("%c",lowerCase);
+	}
         putchar('\n');
-
 }
