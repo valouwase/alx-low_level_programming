@@ -10,8 +10,8 @@ void print_alphabet(void)
 
 	for(lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
 	{
-		_putchar(lowerCase);
+		putchar(lowerCase);
 	}
-	_putchar("\n");
+	putchar("\n");
 
 }
