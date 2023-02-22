@@ -1,3 +1,3 @@
-int _putchar(char lowerCase, letter);
+int _putchar(char lowerCase , char letter);
 void print_alphabet(void);
 void print_alphabet_x10(void);
