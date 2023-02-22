@@ -1,10 +1,10 @@
-#include <stdio.h>
 /** main -  prints the alphabet, in lowercase, followed by a new line.
  *
  * return: Always 0
  *
  */
-// #include "main.h"
+#include "main.h"
+
 void print_alphabet(void);
 
 int main(void)
