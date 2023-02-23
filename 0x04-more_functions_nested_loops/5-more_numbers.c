@@ -10,8 +10,10 @@ void more_numbers(void)
 	{
 		for (int i = 0; i < 15; i++)
 		{
-			printf("%d", i);
+			if (i > 9)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 		}
-		printf("\n");
+	_putchar('\n');
 	}
 }
