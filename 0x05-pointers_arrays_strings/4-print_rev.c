@@ -1,5 +1,5 @@
-include "main.h"
-include "2-strlen.c"
+#include "main.h"
+#include "2-strlen.c"
 /**
  * print_rev - function to reverse a string.
  * @s: char parameter.
