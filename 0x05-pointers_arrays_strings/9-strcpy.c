@@ -3,7 +3,7 @@
  * _strcpy - function
  * @dest: first array.
  * @src: second array.
- * Return: 0
+ * Return: a string.
  */
 char *_strcpy(char *dest, char *src)
 {
