@@ -4,12 +4,11 @@
  * puts2 - function to print the character of a string.
  * @str: char parameter.
  */
-
 void puts2(char *str)
 {
 	int i, len;
 
-	len = strlen(str);
+	len = _strlen(str);
 
 	for (i = 0; i < len; i++)
 	{
