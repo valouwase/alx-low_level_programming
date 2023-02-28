@@ -2,22 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - function that takes a pointer to an int as parameter
+ * reset_to_98 - function that takes a pointer to an int as parameter
  *        and updates the value it points to to 98.
- *
+ * @n: int parameter
  * Return: Always 0.
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *p;
+	*n = 98;
+	int num = 0;
+	int *n = &num;
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	p = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", p);
-	return (0);
+	printf("n=%d\n", num);
+	reset_to_98(n);
+	printf("n=%d\n", num);
 }
