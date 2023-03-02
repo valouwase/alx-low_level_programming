@@ -12,12 +12,14 @@ char *_strcat(char *dest, char *src)
 	dest_len = 0;
 	src_len = 0;
 	j = 0;
-	for (i = 0; dest_len[i] != '\0'; i++)
-		dest_len[i] += 1;
-	for (i = 0; src_len[i] != '\0'; i++)
-		src_len[i] += 1;
+	for (i = 0; dest[i] != '\0'; i++)
+		dest_len += 1;
+	for (i = 0; src[i] != '\0'; i++)
+		src_len +=1;
 	while (j <= src_len)
+	{
 		j++;
-		dest_len[dest_len + j] = src_len[j];
+		dest[dest_len + j] = src[j];
+	}
 	return (dest);
 }
