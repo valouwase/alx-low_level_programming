@@ -8,12 +8,13 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	unsigned int i;
 	char *dest_ptr = dest;
 	char *src_ptr = src;
 
-	while (n-- > 0)
+	for (i = 0; i < n; i++)
 	{
-		*dest_ptr = *src_ptr++;
+		dest_ptr[i] = src_ptr[i];
 	}
-	return (dest);
+	return (dest_ptr);
 }
