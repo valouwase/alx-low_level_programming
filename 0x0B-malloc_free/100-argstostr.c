@@ -7,7 +7,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	size_t length;
+	int length;
 	int i, index;
 	char *result;
 
@@ -22,16 +22,17 @@ char *argstostr(int ac, char **av)
 	{
 		length += strlen((av[i]) + 1);
 	}
-	result = malloc(length * sizeof(char));
+	result = (char *) malloc(length * sizeof(char));
 	if (result == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < ac; i++)
 	{
-		strcpy(result + index, av[i]);
+		memcpy(result + index, av[i], strlen(av[i]));
 		index += strlen(av[i]);
 		result[index++] = '\n';
 	}
+	result[length - 1] = '\0';
 	return (result);
 }
