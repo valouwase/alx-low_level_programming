@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - function to multiply 2 numbers.
  * @argc: number of strings.

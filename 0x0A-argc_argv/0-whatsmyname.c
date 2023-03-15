@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 /**
  * main - function of command line arguments.
  * @argc: number of comand line arguments.
