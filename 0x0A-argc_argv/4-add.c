@@ -2,11 +2,17 @@
 #include <stdlib.h>
 /**
  * main - function to add to values.
- * @argc: int parameter.
- * @argv: char parameter.
+ * is_digit - function to check a digit.
+ * @argc: string parameter.
+ * @argv: array of string values.
+ * @c: char parameter.
  * Return: 0 or sum.
  */
-int main(int argc, char *argv)
+int is_digit(char c)
+{
+	return (c >= '0' && c <= '9');
+}
+int main(int argc, char *argv[])
 {
 	int i, j, sum;
 	char *arg;
