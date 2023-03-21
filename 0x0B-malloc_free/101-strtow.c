@@ -7,12 +7,13 @@
 char **strtow(char *str)
 {
 	int word_count;
-	int i, index;
+	int i, index, j, k;
 	char *token;
 	char **words;
 
 	index = 0;
 	word_count = 0;
+	j = 0;
 	if (str == NULL || strlen(str) == 0)
 	{
 		return (NULL);
@@ -40,9 +41,12 @@ char **strtow(char *str)
 			free(words);
 			return (NULL);
 		}
-		strcpy(words[index], token);
-		index++;
-		token = strtok(NULL, "");
+		for (k = 0; str[j] != ' ' && str[j] != '\0'; k++)
+		{
+			words[index][k] = str[j];
+			j++;
+		}
+		words[index][k] = '\0';
 	}
 	words[index] = NULL;
 	return (words);
