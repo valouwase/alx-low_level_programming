@@ -8,8 +8,8 @@ list_t *find_listint_loop(listint_t *head)
 {
 	listint_t *tort, *hare;
 
-	*tort = head;
-	*hare = head;
+	tort = head;
+	hare = head;
 	while (hare != NULL && hare->next != NULL)
 	{
 		tort = tort->next;

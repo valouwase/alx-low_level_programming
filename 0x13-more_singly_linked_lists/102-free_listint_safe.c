@@ -6,8 +6,9 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *curr = *h;
-	listint_t *next = NULL;
+	listint_t *curr, *next;
+	curr = *h;
+	next = NULL;
 	size_t size = 0;
 
 	while (curr != NULL)
