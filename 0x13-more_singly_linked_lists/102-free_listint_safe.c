@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 /**
  * free_listint_safe - frees a list.
  * @h: pointer to the head.
@@ -7,10 +7,11 @@
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *curr, *next;
+	size_t size;
+
 	curr = *h;
 	next = NULL;
-	size_t size = 0;
-
+	size = 0;
 	while (curr != NULL)
 	{
 		size++;
