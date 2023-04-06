@@ -4,7 +4,7 @@
  * @head: pointer to the head
  * Return: the sum
  */
-int sum_listint(listint *head)
+int sum_listint(listint_t *head)
 {
 	listint_t *curr_node;
 	int sum;
