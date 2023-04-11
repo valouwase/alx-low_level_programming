@@ -5,13 +5,19 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int i;
+	int i;
 	unsigned long int a;
 
-	a = 1UL << (sizeof(unsigned long int) * 8 - 1);
-	for (i = 0; i < sizeof(unsigned long int) * 8; i++)
+	for (i = 15; i >= 0; i--)
 	{
-		printf("%c", (n & a) ? '1' : '0');
-		a >>= 1;
+		a = (1 << i);
+		if (n & a)
+		{
+			printf("1");
+		}
+		else
+		{
+			printf("0");
+		}
 	}
 }
