@@ -5,19 +5,30 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, temp;
 	unsigned long int a;
 
+	temp = 0;
+
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
 	for (i = 15; i >= 0; i--)
 	{
 		a = (1 << i);
 		if (n & a)
 		{
+			temp++;
 			printf("1");
 		}
 		else
 		{
-			printf("0");
+			if (temp)
+			{
+				printf("0");
+			}
 		}
 	}
 }
